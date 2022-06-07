@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            weeTally manager
+        </title>
+        <meta name="viewport" content="width=300, height=800, initial-scale=1">
+        <style>
+            html {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: white;
+            }
+            body {
+                background-color: #313131;
+                padding: 10px 0px 0px 10px;
+            }
+            div {
+                width: 300px;
+            }
+            input {
+                background-color: #474747;
+                color: white;
+            }
+            #ip {
+                width: 50px;
+            }
+            #note {
+                font-size: x-small;
+            }
+            button {
+                border: none;
+                margin-top: 30px;
+                bottom: 100px; 
+                height: 50px; 
+                width: 100px; 
+                background-color: rgb(163, 0, 0); 
+                color: white;
+                border-radius: 5px;
+            }
+            footer {
+                position: absolute;
+                bottom: 10px;
+                color: rgb(166, 166, 166);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            weeTally manager
+        </h1>
+        <div>
+            <h2>
+                Connect to WiFi
+            </h2>
+            <div>
+                <form>
+                    <label for="SSID">SSID:</label><br>
+                    <input type="text"  name="SSID" style="margin-bottom: 10px;"><br>
+                    <label for="PASS">PASSWORD:</label><br>
+                    <input type="password" name="PASS">
+                </form>
+                <p id="note">
+                    Please note - password will be sent to device as a <b>plaintext</b>!
+                </p>
+            </div>
+        </div>
+        <div>
+            <h2>
+                Set ATEM IP
+            </h2>
+            <form>
+                <input type="number" id="ip" name="IP1" value="192">.
+                <input type="number" id="ip" name="IP2" value="168">.
+                <input type="number" id="ip" name="IP3" value="0">.
+                <input type="number" id="ip" name="IP4" value="0">
+            </form>
+        </div>
+        <div>
+            <h2>
+                Set tally ID
+            </h2>
+            <form>
+                <label for="ID">ID:</label><br>
+                <input type="number" id="ID" name="ID" style="width: 50px"><br>
+            </form>
+        </div>
+        <div ></div>
+            <button>
+                SET
+            </button>
+        </div>
+
+        <footer>
+            weeTally manager v0.1
+        </footer>
+    </body>
+</html>
